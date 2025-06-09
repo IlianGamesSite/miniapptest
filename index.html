@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map Mini App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <h2>Выбор города</h2>
+    <select id="city-select">
+      <option value="">-- Выберите город --</option>
+      <option value="Москва">Москва</option>
+      <option value="Санкт-Петербург">Санкт-Петербург</option>
+      <option value="Казань">Казань</option>
+    </select>
+
+    <button id="add-marker-btn">Добавить метку</button>
+
+    <div id="marker-form">
+      <textarea id="marker-comment" placeholder="Комментарий..."></textarea>
+      <button id="set-marker-btn">Установить</button>
+    </div>
+
+    <div class="map-container">
+      <img src="assets/Placdholder.jpg" alt="Карта" class="map-placeholder" />
+    </div>
+
+    <h3>Установленные метки:</h3>
+    <ul id="marker-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
